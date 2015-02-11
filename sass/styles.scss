@@ -1,0 +1,8 @@
+$dark-color: #333333;
+
+@import "reset";
+@import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css";
+
+body{
+  background: $dark-color;
+}
