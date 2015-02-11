@@ -1,0 +1,14 @@
+$base: 16px;
+
+
+//Media Query
+$small-only: "only screen and (max-width:640px)";
+$medium-only: "only screen and (min-width:641px) and (max-width:960px)";
+$medium-up: "only screen and (min-width:641px)";
+$large-only: "only screen and (min-width:961px)";
+
+//Colors
+$dark_color: #14273D;
+$medium_color: #389FA8;
+$medium_light_color: #57C1C7;
+$light_color: #EFF9EC;
