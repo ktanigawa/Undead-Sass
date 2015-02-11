@@ -72,12 +72,16 @@ body {
 a {
   text-decoration: none; }
 
+.nav {
+  text-align: center; }
+
 @media only screen and (max-width:640px) {
   .nav li {
     display: none; } }
-@media only screen and (min-width:641px) and (max-width:960px), only screen and (min-width:961px) {
+@media only screen and (min-width:641px) {
   .nav li {
-    display: inline-block; } }
+    display: inline-block;
+    margin: 10px; } }
 
 h1 {
   padding: 0 35px; }
@@ -97,9 +101,9 @@ h1 {
       height: 25px; } }
   @media only screen and (min-width:641px) {
     .row h1 {
-      color: #389FA8;
-      border-top: solid 1px #389FA8;
-      border-bottom: solid 1px #389FA8;
+      color: #57C1C7;
+      border-top: solid 1px #57C1C7;
+      border-bottom: solid 1px #57C1C7;
       padding: 25px 0; } }
 
 .content {
@@ -122,20 +126,47 @@ article p {
   padding-bottom: 35px; }
 
 @media only screen and (max-width:640px) {
+  article {
+    border-bottom: solid 1px #57C1C7; } }
+
+@media only screen and (min-width:641px) and (max-width:960px) {
+  aside {
+    padding: 0 35px 35px; }
+    aside a {
+      display: block;
+      background-color: #389FA8;
+      color: #57C1C7;
+      text-align: center;
+      padding-top: 10px;
+      height: 40px; } }
+
+@media only screen and (min-width:641px) and (max-width:960px) {
+  aside h4 {
+    color: #57C1C7;
+    font-size: 1.5em; } }
+
+aside p {
+  padding-bottom: 25px; }
+
+@media only screen and (max-width:640px) {
   aside, .left {
     display: none; } }
 
-@media only screen and (max-width:640px) {
-  article {
-    border-bottom: solid 1px #389FA8; } }
-
 @media only screen and (min-width:641px) {
-  aside {
-    border-bottom: solid 1px #389FA8; } }
+  footer {
+    border-top: solid 1px #57C1C7; } }
 
 .footer_links {
   text-align: center;
   padding: 15px 0; }
+  @media only screen and (min-width:961px) {
+    .footer_links {
+      padding: 15px;
+      text-align: left; } }
+
+@media only screen and (min-width:641px) and (max-width:960px) {
+  footer .left p {
+    display: none; } }
 
 footer .right ul li {
   display: inline;
