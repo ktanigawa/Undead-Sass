@@ -36,20 +36,20 @@ table {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.cf:before, .cf:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after {
+.clearfix:after {
   clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf {
+.clearfix {
   *zoom: 1; }
 
 * {
@@ -57,7 +57,7 @@ table {
 
 @media only screen and (min-width:961px) {
   html {
-    background: #57C1C7; } }
+    background-color: #57C1C7; } }
 
 body {
   background: #EFF9EC;
@@ -68,9 +68,18 @@ body {
   @media only screen and (min-width:641px) and (max-width:960px) {
     body {
       background: #EFF9EC; } }
+  @media only screen and (min-width:961px) {
+    body {
+      background-color: #57C1C7;
+      margin-top: 50px;
+      margin-bottom: 50px; } }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
+
+a:hover {
+  color: #57C1C7; }
 
 .nav {
   text-align: center; }
@@ -106,8 +115,21 @@ h1 {
       border-bottom: solid 1px #57C1C7;
       padding: 25px 0; } }
 
+@media only screen and (min-width:961px) {
+  .row {
+    max-width: 800px;
+    margin: auto;
+    background-color: #EFF9EC; } }
+
 .content {
   padding-top: 35px; }
+  @media only screen and (min-width:961px) {
+    .content {
+      float: left;
+      width: 70%;
+      box-sizing: border-box;
+      border-right: solid 1px #57C1C7;
+      background-color: #EFF9EC; } }
 
 h2 {
   font-size: 2em;
@@ -131,16 +153,25 @@ article p {
 
 @media only screen and (min-width:641px) and (max-width:960px) {
   aside {
-    padding: 0 35px 35px; }
-    aside a {
-      display: block;
-      background-color: #389FA8;
-      color: #57C1C7;
-      text-align: center;
-      padding-top: 10px;
-      height: 40px; } }
+    padding: 0 35px 35px; } }
+@media only screen and (min-width:961px) {
+  aside {
+    padding: 35px 35px;
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: #EFF9EC; } }
 
-@media only screen and (min-width:641px) and (max-width:960px) {
+@media only screen and (min-width:641px) {
+  aside a {
+    display: block;
+    background-color: #389FA8;
+    color: #57C1C7;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; } }
+
+@media only screen and (min-width:641px) {
   aside h4 {
     color: #57C1C7;
     font-size: 1.5em; } }
@@ -156,17 +187,28 @@ aside p {
   footer {
     border-top: solid 1px #57C1C7; } }
 
-.footer_links {
-  text-align: center;
-  padding: 15px 0; }
-  @media only screen and (min-width:961px) {
-    .footer_links {
-      padding: 15px;
-      text-align: left; } }
+@media only screen and (max-width:640px) {
+  .footer_links {
+    text-align: center;
+    padding: 15px 0; } }
+@media only screen and (min-width:641px) and (max-width:960px) {
+  .footer_links {
+    text-align: center;
+    padding: 15px 0; } }
+@media only screen and (min-width:961px) {
+  .footer_links {
+    float: left;
+    width: 40%;
+    padding: 15px 35px; } }
 
 @media only screen and (min-width:641px) and (max-width:960px) {
   footer .left p {
     display: none; } }
+@media only screen and (min-width:961px) {
+  footer .left p {
+    float: right;
+    width: 40%;
+    padding: 15px 0; } }
 
 footer .right ul li {
   display: inline;
