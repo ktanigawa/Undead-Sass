@@ -1,2 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css);
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background: #333333; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before, .cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+* {
+  font-family: "Droid Serif"; }
+
+@media only screen and (min-width:961px) {
+  html {
+    background: #57C1C7; } }
+
+body {
+  background: #EFF9EC;
+  font-family: 'Droid Serif', serif;
+  color: #14273D;
+  font-weight: 400;
+  line-height: 1.75em; }
+  @media only screen and (min-width:641px) and (max-width:960px) {
+    body {
+      background: #EFF9EC; } }
+
+a {
+  text-decoration: none; }
+
+@media only screen and (max-width:640px) {
+  .nav li {
+    display: none; } }
+@media only screen and (min-width:641px) and (max-width:960px), only screen and (min-width:961px) {
+  .nav li {
+    display: inline-block; } }
+
+h1 {
+  padding: 0 35px; }
+
+.row h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 4px; }
+  @media only screen and (max-width:640px) {
+    .row h1 {
+      color: #57C1C7;
+      background-color: #389FA8;
+      font-size: .75em;
+      letter-spacing: 3px;
+      max-width: 640px;
+      height: 25px; } }
+  @media only screen and (min-width:641px) {
+    .row h1 {
+      color: #389FA8;
+      border-top: solid 1px #389FA8;
+      border-bottom: solid 1px #389FA8;
+      padding: 25px 0; } }
+
+.content {
+  padding-top: 35px; }
+
+h2 {
+  font-size: 2em;
+  padding: 0 35px; }
+
+h3 {
+  color: #57C1C7;
+  padding: 0 35px 30px; }
+
+h2 a, h3 a {
+  border-bottom: 1px dashed #389FA8;
+  line-height: 1.5em; }
+
+article p {
+  padding: 0 35px;
+  padding-bottom: 35px; }
+
+@media only screen and (max-width:640px) {
+  aside, .left {
+    display: none; } }
+
+@media only screen and (max-width:640px) {
+  article {
+    border-bottom: solid 1px #389FA8; } }
+
+@media only screen and (min-width:641px) {
+  aside {
+    border-bottom: solid 1px #389FA8; } }
+
+.footer_links {
+  text-align: center;
+  padding: 15px 0; }
+
+footer .right ul li {
+  display: inline;
+  margin: 5px; }
